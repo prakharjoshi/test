@@ -20,7 +20,7 @@ install:
 # to run your custom scripts instead of automatic tests
 test_script:
   - node --version && npm --version
-  - cmd: "node node_modules\\.bin\\newman run .testcollection.postman_collection.js"
+  - cmd: "node node_modules\\.bin\\newman run .\testcollection.postman_collection.js"
 
 # Don't actually build.
 build: off
