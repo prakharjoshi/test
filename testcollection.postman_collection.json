@@ -1,0 +1,36 @@
+{
+	"variables": [],
+	"info": {
+		"name": "test collection",
+		"_postman_id": "67fc2285-8057-5a44-1a10-3577f59fc162",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "sample get request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var response = JSON.parse(responseBody);",
+							"",
+							"tests[\"Body is correct\"] = response.url === \"https://postman-echo.com/get\";",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "https://postman-echo.com/get",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
