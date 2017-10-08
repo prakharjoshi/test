@@ -25,3 +25,5 @@ build: off # Disable MSBuilds, not related to the regular build process
 test_script:
   - node --version && npm --version
   - cmd: "newman run ./testcollection.postman_collection.js"
+
+build: off
